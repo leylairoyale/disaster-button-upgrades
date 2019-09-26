@@ -1,7 +1,21 @@
 
-<button mat-stroked-button (click)="onClick()">Give me a random death story!</button>
+<div *ngIf="theynoclicky">
+    <button mat-stroked-button (click)="onClick()">Give me a random death story!</button>
+</div>
+
+<div *ngIf="anotherclicky">
+    <button mat-stroked-button (click)="anotherClick()">No, but give me another one!</button>
+</div>
+
+
 
 <div *ngIf="theyclicky">
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="http://www.deadinchicago.com/random" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div *ngIf="clickagain">
     <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="http://www.deadinchicago.com/random" allowfullscreen></iframe>
     </div>
