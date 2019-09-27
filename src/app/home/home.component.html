@@ -1,22 +1,41 @@
-
-<div *ngIf="theynoclicky">
-    <button mat-stroked-button (click)="onClick()">Give me a random death story!</button>
-</div>
-
-<div *ngIf="anotherclicky">
-    <button mat-stroked-button (click)="anotherClick()">No, but give me another one!</button>
-</div>
-
-
-
-<div *ngIf="theyclicky">
-    <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="http://www.deadinchicago.com/random" allowfullscreen></iframe>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1> THE DISASTER BUTTON </h1>
+            <p>Click the button for a true tale of horror history from Chicago's past. Not for the faint
+            of heart, some stories are funny, some are sad, and nearly all date from between 1860-1950's Chicago</p>
+        </div>
     </div>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
 
-<div *ngIf="clickagain">
-    <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="http://www.deadinchicago.com/random" allowfullscreen></iframe>
+            <div *ngIf="theynoclicky" class="button">
+                <button class="btn-purple-gradient btn-rounded" (click)="onClick()">Click for Chicago horror history</button>
+            </div>
+
+            <div *ngIf="anotherclicky" class="button">
+                <button mat-stroked-button (click)="anotherClick()">Click for Chicago horror history</button>
+            </div>
+        </div>
     </div>
 </div>
+<br>
+
+
+<!-- <div class="container">
+    <div class="row"> -->
+        <div *ngIf="theyclicky">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="http://www.deadinchicago.com/random/#postbox" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div *ngIf="clickagain">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="http://www.deadinchicago.com/random/#postbox" allowfullscreen></iframe>
+            </div>
+        </div>
+    <!-- </div>
+</div> -->
