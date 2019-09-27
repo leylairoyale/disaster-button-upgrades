@@ -1,25 +1,34 @@
-<div class="container">
+<br>
+<br>
+
+<div class="container disastertop">
     <div class="row">
         <div class="col">
+            <br>
+            <!-- <br> -->
             <h1> THE DISASTER BUTTON </h1>
-            <p>Click the button for a true tale of horror history from Chicago's past. Not for the faint
-            of heart, some stories are funny, some are sad, and nearly all date from between 1860-1950's Chicago</p>
+            <br>
+            <p>Click the button for a true tale of horror history from Chicago, dating from the 1850s-1950s. Not for the faint
+            of heart, some stories are funny, some are sad, and some are just bizarre.</p>
         </div>
     </div>
-</div>
-<div class="container">
+<!-- </div> -->
+<br>
+<!-- <div class="container"> -->
     <div class="row">
-        <div class="col">
+        <!-- <div class="col"> -->
 
             <div *ngIf="theynoclicky" class="button">
-                <button class="btn-purple-gradient btn-rounded" (click)="onClick()">Click for Chicago horror history</button>
+                <button class="btn purple-gradient btn-rounded" (click)="onClick()">Click for Chicago horror history</button>
             </div>
 
             <div *ngIf="anotherclicky" class="button">
-                <button mat-stroked-button (click)="anotherClick()">Click for Chicago horror history</button>
+                <button class="btn blue-gradient btn-rounded" (click)="anotherClick()">Click for Chicago horror history</button>
             </div>
-        </div>
+            <br>
+        <!-- </div> -->
     </div>
+    <br>
 </div>
 <br>
 
