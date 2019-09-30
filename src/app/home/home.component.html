@@ -6,10 +6,10 @@
         <div class="col">
             <br>
             <!-- <br> -->
-            <h1> THE DISASTER BUTTON </h1>
+            <strong><h1> THE DISASTER BUTTON </h1></strong>
             <br>
             <p>Click the button for a true tale of horror history from Chicago, dating from the 1850s-1950s. Not for the faint
-            of heart, some stories are funny, some are sad, and some are just bizarre.</p>
+            of heart, some stories are funny, some are sad, some are bloody, and some are just bizarre.</p>
         </div>
     </div>
 <!-- </div> -->
@@ -19,13 +19,16 @@
         <!-- <div class="col"> -->
 
             <div *ngIf="theynoclicky" class="button">
-                <button class="btn purple-gradient btn-rounded" (click)="onClick()">Click for Chicago horror history</button>
+            <button mdbBtn type="button" gradient="purple" size="lg" (click)="onClick()" mdbWavesEffect>DISASTER!</button>
+                <!-- <button mdbBTN type="button" class="btn purple-gradient btn-rounded" size="lg" (click)="onClick()" mdbWavesEffect>DISASTER!</button> -->
             </div>
 
             <div *ngIf="anotherclicky" class="button">
-                <button class="btn blue-gradient btn-rounded" (click)="anotherClick()">Click for Chicago horror history</button>
+                <button mdbBtn type="button" gradient="blue" size="lg" (click)="anotherClick()" mdbWavesEffect>DISASTER!</button>
+                <!-- <button type="button" class="btn blue-gradient btn-rounded" (click)="anotherClick()" size="lg" mdbWavesEffect>DISASTER!</button> -->
             </div>
             <br>
+        
         <!-- </div> -->
     </div>
     <br>
@@ -33,8 +36,8 @@
 <br>
 
 
-<!-- <div class="container">
-    <div class="row"> -->
+<div class="container">
+    <!-- <div class="row"> -->
         <div *ngIf="theyclicky">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="http://www.deadinchicago.com/random/#postbox" allowfullscreen></iframe>
@@ -46,5 +49,26 @@
                 <iframe class="embed-responsive-item" src="http://www.deadinchicago.com/random/#postbox" allowfullscreen></iframe>
             </div>
         </div>
-    <!-- </div>
-</div> -->
+    <!-- </div> -->
+</div>
+<br>
+<br>
+
+<div class="container disasterbottom">
+    <div *ngIf="theyclicky, clickagain">
+        <div>
+        <br>
+            All stories are sourced from <strong><a href="https://www.deadinchicago.com" target="_blank"><strong>Dead in Chicago</strong></a></strong>
+            , a horror history site maintained by software engineer and historian <a href="https://www.leylab.info" target="_blank">Leyla Royale</a> from 2014 - 2017. Any editing errors can be blamed on past Leyla. All 
+            information is sourced from Chicago newspaper archives. 
+            <br>
+            <br>
+            Questions?   <a href="mailto:leylairoyale@gmail.com"><strong>Email Leyla here.</strong></a>
+        <br>
+        </div>
+        <br>
+    </div>
+</div>
+<br>
+<br>
+
